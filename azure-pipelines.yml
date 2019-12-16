@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: ./sample.sh
+- script: sudo ./sample.sh
   displayName: 'Install-chrome driver'
 
 - script: |
