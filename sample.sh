@@ -13,15 +13,15 @@ fi
 echo $CHR_DRIVER
 
 TEMP_PATH=$PWD
-mkdir $TEMP_PATH && pushd $TEMP_PATH
-wget $CHR_DRIVER -P $TEMP_PATH
+sudo mkdir $TEMP_PATH && pushd $TEMP_PATH
+sudo wget $CHR_DRIVER -P $TEMP_PATH
 
 #sudo apt-get install -f 
 sudo apt install unzip
-unzip ${TEMP_PATH}/chromedriver_linux64.zip
+#sudo unzip ${TEMP_PATH}/chromedriver_linux64.zip
 
-sudo chown root:root ${TEMP_PATH}
-sudo chmod 0755 ${TEMP_PATH}
+#sudo chown root:root ${TEMP_PATH}
+#sudo chmod 0755 ${TEMP_PATH}
 
 
 
